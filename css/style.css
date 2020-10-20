@@ -1,0 +1,64 @@
+/* defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: lightblue ;
+}
+
+main {
+  margin: auto;
+  width: 25vw;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* media query for the change of screen size */
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+  .thunder {
+    fill: darkorange;
+  }
+  .thunder1 {
+    fill: blue;
+  }
+  .cloud {
+    fill: grey;
+  }
+}
+
+/* button alignment */
+div {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* thunder font awesome change color */
+svg path {
+  fill: black;
+}
+
+.thunder.open {
+  fill: darkorange;
+}
+.thunder1.open {
+  fill: blue;
+}
+.cloud.open {
+  fill: grey;
+}
+
+.cloud, .thunder, .thunder1 {
+  transition: all 250ms ease;
+}
